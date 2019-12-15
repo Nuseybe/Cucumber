@@ -1,0 +1,5 @@
+Feature: Verifying login functionality
+  Scenario: Verifying with valid credentials
+    Given Navigate to login page
+    Then User log in with valid credential username "Tester" password "test"
+    And Verify user is in HomePage

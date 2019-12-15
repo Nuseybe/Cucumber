@@ -1,0 +1,84 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 26,
+        "name": "Verify delete functionality",
+        "description": "",
+        "id": "adding-order;verify-delete-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Nagivate to login page",
+            "match": {
+              "location": "VerifyLoginFunctionality.nagivate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 46
+                },
+                {
+                  "val": "test",
+                  "offset": 64
+                }
+              ],
+              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "User deletes \"Mark Smith\" from table",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "User validates that \"Mark Smith\" is deleted",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@TECTC-1015"
+          }
+        ]
+      }
+    ],
+    "name": "Adding Order",
+    "description": "",
+    "id": "adding-order",
+    "keyword": "Feature",
+    "uri": "AddingOrder.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@TEC-102"
+      }
+    ]
+  }
+]

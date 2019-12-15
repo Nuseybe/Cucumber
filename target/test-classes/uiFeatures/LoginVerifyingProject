@@ -1,0 +1,6 @@
+@UserStory1
+Feature: Authentication functionality
+  Scenario: Create an account and verify if it is created by signing in.
+    Given Navigate to create an account page
+    Then Enter all valid credentials
+    And verify you have signed up
